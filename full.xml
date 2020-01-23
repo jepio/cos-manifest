@@ -1,0 +1,62 @@
+<manifest>
+  <remote  name="cos"
+           fetch="https://cos.googlesource.com"
+           review="https://cos-review.googlesource.com"  />
+  <default remote="cos" revision="refs/heads/master" sync-j="8" />
+  <notice>
+Your sources have been sync'd successfully.
+  </notice>
+
+  <!-- Overlays -->
+  <project path="src/overlays"
+           name="cros/chromiumos/overlays/board-overlays" />
+
+  <!-- Kernels -->
+  <project path="src/third_party/kernel/v4.19-lakitu"
+           name="cros/chromiumos/third_party/kernel"
+           revision="refs/heads/chromeos-4.19-lakitu" />
+  <project path="src/third_party/kernel/v4.14"
+           name="cros/chromiumos/third_party/kernel"
+           revision="refs/heads/chromeos-4.14" />
+
+  <!-- cros_sdk dependencies -->
+  <project path="src/third_party/portage-stable"
+           name="cros/chromiumos/overlays/portage-stable" />
+  <project path="chromite"
+           name="cros/chromiumos/chromite" />
+  <project path="chromite/infra/proto"
+           name="cros/chromiumos/infra/proto" />
+  <project path="src/platform/crostestutils"
+           name="cros/chromiumos/platform/crostestutils" />
+  <project path="src/scripts"
+           name="cros/chromiumos/platform/crosutils" />
+  <project path="src/platform/vboot_reference"
+           name="cros/chromiumos/platform/vboot_reference" />
+  <project path="src/third_party/autotest/files"
+           name="cros/chromiumos/third_party/autotest" />
+  <project path="src/third_party/chromiumos-overlay"
+           sync-c="true"
+           name="cros/chromiumos/overlays/chromiumos-overlay" />
+  <project path="src/third_party/eclass-overlay"
+           name="cros/chromiumos/overlays/eclass-overlay" />
+  <project path="src/platform/dev"
+           name="cros/chromiumos/platform/dev-util" />
+  <project path="src/platform/verity"
+           name="cros/chromiumos/platform/dm-verity" />
+  <project path="src/third_party/toolchain-utils"
+           name="cros/chromiumos/third_party/toolchain-utils" />
+  <project path="src/third_party/portage_tool"
+           name="cros/chromiumos/third_party/portage_tool" />
+  <project path="src/chromium/depot_tools"
+           name="cros/chromium/tools/depot_tools" />
+  <project path="src/third_party/coreboot"
+           name="cros/chromiumos/third_party/coreboot" />
+  <project path="src/third_party/modp_b64"
+           name="cros/aosp/platform/external/modp_b64" />
+  <project path="src/platform2"
+           name="cros/chromiumos/platform2" />
+
+  <project path="src/repohooks"
+           name="cros/chromiumos/repohooks" />
+  <repo-hooks enabled-list="pre-upload" in-project="chromiumos/repohooks" />
+</manifest>
