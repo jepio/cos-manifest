@@ -12,7 +12,7 @@ Your sources have been sync'd successfully.
            name="cros/chromiumos/overlays/board-overlays" />
 
   <!-- Kernels -->
-  <project path="src/third_party/kernel/v4.19"
+  <project path="src/third_party/kernel"
            name="third_party/kernel"
            revision="refs/heads/lakitu-4.19" />
 
