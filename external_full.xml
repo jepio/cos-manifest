@@ -1,0 +1,83 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<manifest>
+  <remote  name="cos"
+           fetch="https://cos.googlesource.com"
+           review="https://cos-review.googlesource.com"  />
+  <default remote="cos" revision="refs/heads/master" sync-j="8" />
+  <notice>
+Your sources have been sync'd successfully.
+  </notice>
+
+  <!-- mirrored cros_sdk dependencies -->
+  <project path="src/third_party/portage-stable"
+           name="mirrors/cros/chromiumos/overlays/portage-stable" />
+  <project path="chromite"
+           name="mirrors/cros/chromiumos/chromite" />
+  <project path="chromite/infra/proto"
+           name="mirrors/cros/chromiumos/infra/proto" />
+  <project path="chromite/third_party/pyelftools"
+           name="mirrors/cros/chromiumos/third_party/pyelftools" />
+  <project path="src/platform/crostestutils"
+           name="mirrors/cros/chromiumos/platform/crostestutils" />
+  <project path="src/scripts"
+           name="mirrors/cros/chromiumos/platform/crosutils" />
+  <project path="src/platform/vboot_reference"
+           name="mirrors/cros/chromiumos/platform/vboot_reference" />
+  <project path="src/third_party/autotest/files"
+           name="mirrors/cros/chromiumos/third_party/autotest" />
+  <project path="src/third_party/chromiumos-overlay"
+           sync-c="true"
+           name="mirrors/cros/chromiumos/overlays/chromiumos-overlay" />
+  <project path="src/third_party/eclass-overlay"
+           name="mirrors/cros/chromiumos/overlays/eclass-overlay" />
+  <project path="src/platform/dev"
+           name="mirrors/cros/chromiumos/platform/dev-util" />
+  <project path="src/platform/verity"
+           name="mirrors/cros/chromiumos/platform/dm-verity" />
+  <project path="src/third_party/toolchain-utils"
+           name="mirrors/cros/chromiumos/third_party/toolchain-utils" />
+  <project path="src/third_party/portage_tool"
+           name="mirrors/cros/chromiumos/third_party/portage_tool" />
+  <project path="src/chromium/depot_tools"
+           name="mirrors/cros/chromium/tools/depot_tools" />
+  <project path="src/third_party/coreboot"
+           name="mirrors/cros/chromiumos/third_party/coreboot" />
+  <project path="src/third_party/modp_b64"
+           name="mirrors/cros/aosp/platform/external/modp_b64" />
+  <project path="src/platform2"
+           name="mirrors/cros/chromiumos/platform2" />
+  <project path="src/repohooks"
+           name="mirrors/cros/chromiumos/repohooks" />
+
+  <!-- COS sources -->
+  <project path="src/overlays"
+           name="cos/overlays/board-overlays" />
+  <project path="manifest" name="cos/manifest" >
+      <copyfile src="LICENSE" dest="LICENSE" />
+  </project>
+
+  <!--
+     -<project path="src/third_party/kernel"
+     -         name="third_party/kernel"
+     -         revision="refs/heads/lakitu-4.19" />
+     -->
+
+  <repo-hooks enabled-list="pre-upload"
+           in-project="mirrors/cros/chromiumos/repohooks" />
+
+</manifest>
