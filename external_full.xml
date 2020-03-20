@@ -31,7 +31,8 @@ Your sources have been sync'd successfully.
   <project path="chromite/infra/proto"
            name="mirrors/cros/chromiumos/infra/proto" />
   <project path="chromite/third_party/pyelftools"
-           name="mirrors/cros/chromiumos/third_party/pyelftools" />
+           name="mirrors/cros/chromiumos/third_party/pyelftools"
+           revision="refs/heads/master-0.22" />
   <project path="src/platform/crostestutils"
            name="mirrors/cros/chromiumos/platform/crostestutils" />
   <project path="src/scripts"
