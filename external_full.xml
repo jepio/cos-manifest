@@ -18,70 +18,55 @@
   <remote  name="cos"
            fetch="https://cos.googlesource.com"
            review="https://cos-review.googlesource.com"  />
-  <default remote="cos" revision="refs/heads/master" sync-j="8" />
+  <default remote="cos" revision="refs/heads/release-R77-12371.B" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
 
   <!-- mirrored cros_sdk dependencies -->
   <project path="src/third_party/portage-stable"
-           name="mirrors/cros/chromiumos/overlays/portage-stable"
-           revision="9804d0ae3abf8944109b823d6a588411bf32d3b2" />
+           name="mirrors/cros/chromiumos/overlays/portage-stable" />
   <project path="chromite"
-           name="mirrors/cros/chromiumos/chromite"
-           revision="c3a81f99020dd6ffd637f40562a9840b8dadf840" />
+           name="mirrors/cros/chromiumos/chromite" />
   <project path="chromite/infra/proto"
            name="mirrors/cros/chromiumos/infra/proto"
-           revision="318376056bca545db5d536c734424b7c0457688e" />
+           revision="refs/heads/master" />
   <project path="chromite/third_party/pyelftools"
-           name="mirrors/cros/chromiumos/third_party/pyelftools"
-           revision="0890b98431a9b2e637c18f719232d06a4e5c3cd8" />
+           name="mirrors/cros/chromiumos/third_party/pyelftools" />
   <project path="src/platform/crostestutils"
-           name="mirrors/cros/chromiumos/platform/crostestutils"
-           revision="4a382fb97c9d25d3406547c2ef182d25bea85718" />
+           name="mirrors/cros/chromiumos/platform/crostestutils" />
   <project path="src/scripts"
-           name="mirrors/cros/chromiumos/platform/crosutils"
-           revision="0faf2d17f643f8c0db73b256cd27986bf3c68278" />
+           name="mirrors/cros/chromiumos/platform/crosutils" />
   <project path="src/platform/vboot_reference"
-           name="mirrors/cros/chromiumos/platform/vboot_reference"
-           revision="1a2ddae3d9782cbf0f0a1ab27ae3820c90abec54" />
+           name="mirrors/cros/chromiumos/platform/vboot_reference" />
   <project path="src/third_party/autotest/files"
-           name="mirrors/cros/chromiumos/third_party/autotest"
-           revision="413cd25b3cef93d30e6bc889b7bb461101b15858" />
+           name="mirrors/cros/chromiumos/third_party/autotest" />
   <project path="src/third_party/chromiumos-overlay"
            sync-c="true"
-           name="mirrors/cros/chromiumos/overlays/chromiumos-overlay"
-           revision="97808285192b03a73269f8cc63d33d693e834efa" />
+           name="mirrors/cros/chromiumos/overlays/chromiumos-overlay" />
   <project path="src/third_party/eclass-overlay"
-           name="mirrors/cros/chromiumos/overlays/eclass-overlay"
-           revision="e8e6ae6cb392893a377f92024efbcbc94a0a7985" />
+           name="mirrors/cros/chromiumos/overlays/eclass-overlay" />
   <project path="src/platform/dev"
-           name="mirrors/cros/chromiumos/platform/dev-util"
-           revision="b898c1bfbc3f0a0fa38dd5911b283c408657dd36" />
+           name="mirrors/cros/chromiumos/platform/dev-util" />
   <project path="src/platform/verity"
-           name="mirrors/cros/chromiumos/platform/dm-verity"
-           revision="393cd4d510256b0bb2bdd0acd9656105cfd28771" />
+           name="mirrors/cros/chromiumos/platform/dm-verity" />
   <project path="src/third_party/toolchain-utils"
-           name="mirrors/cros/chromiumos/third_party/toolchain-utils"
-           revision="edc59f7812ca3aa1b5e304d2db7ee4cc44d26482" />
+           name="mirrors/cros/chromiumos/third_party/toolchain-utils" />
   <project path="src/third_party/portage_tool"
-           name="mirrors/cros/chromiumos/third_party/portage_tool"
-           revision="0e1f3adafd56a94cbf3b0aa63b150eb5a64f2ca1" />
+           name="mirrors/cros/chromiumos/third_party/portage_tool" />
   <project path="src/chromium/depot_tools"
            name="mirrors/cros/chromium/tools/depot_tools"
-           revision="e64cd3aeff711420369d8daf2a60006045591622" />
+           revision="7639f1999ac1d8992fc4fbb169d164b156d9a7f7" />
   <project path="src/third_party/coreboot"
-           name="mirrors/cros/chromiumos/third_party/coreboot"
-           revision="e55ea5ef9a56dbfd851030c0e4c25e96db141ece" />
-  <project path="src/third_party/modp_b64"
-           name="mirrors/cros/aosp/platform/external/modp_b64"
-           revision="467734f4870d3ab23968f5ebdd461f6112e4103b" />
-  <project path="src/platform2"
-           name="mirrors/cros/chromiumos/platform2"
-           revision="34c111af2f5931a49fd79757621c9b0a5b748ec0" />
+           name="mirrors/cros/chromiumos/third_party/coreboot" />
+  <project path="src/platform/microbenchmarks"
+           name="mirrors/cros/chromiumos/platform/microbenchmarks" />
+  <project path="src/third_party/webrtc-apm"
+           name="mirrors/cros/chromiumos/third_party/webrtc-apm" />
+  <project path="src/third_party/rootdev"
+           name="mirrors/cros/chromiumos/third_party/rootdev" />
   <project path="src/repohooks"
-           name="mirrors/cros/chromiumos/repohooks"
-           revision="4cee050efc3512485b3f5ac6460388052fc266b6" />
+           name="mirrors/cros/chromiumos/repohooks" />
 
   <!-- COS sources -->
   <project path="src/overlays"
@@ -91,10 +76,7 @@ Your sources have been sync'd successfully.
   </project>
   <project path="src/third_party/kernel/v4.19"
            name="third_party/kernel"
-           revision="refs/heads/cos-4.19" />
-  <project path="src/third_party/kernel/v5.4"
-           name="third_party/kernel"
-           revision="refs/heads/cos-5.4" />
+           revision="refs/heads/release-R77-12371.B-cos-4.19" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="mirrors/cros/chromiumos/repohooks" />
