@@ -54,7 +54,7 @@ Your sources have been sync'd successfully.
            name="mirrors/cros/chromiumos/third_party/toolchain-utils" />
   <project path="src/third_party/portage_tool"
            name="mirrors/cros/chromiumos/third_party/portage_tool" />
-  <project path="src/chromium/depot_tools"
+  <project path="chromium/tools/depot_tools"
            name="mirrors/cros/chromium/tools/depot_tools"
            revision="7639f1999ac1d8992fc4fbb169d164b156d9a7f7" />
   <project path="src/third_party/coreboot"
