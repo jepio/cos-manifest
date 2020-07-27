@@ -24,9 +24,6 @@ Your sources have been sync'd successfully.
   </notice>
 
   <!-- mirrored cros_sdk dependencies -->
-  <project path="src/third_party/portage-stable"
-           name="mirrors/cros/chromiumos/overlays/portage-stable"
-           revision="06c4b43aac67f8a4cab970bcd521b7d88548dd66" />
   <project path="chromite"
            name="mirrors/cros/chromiumos/chromite"
            revision="f5c562d16477ffcd937496656e1c5733b7c7951b" />
@@ -86,6 +83,8 @@ Your sources have been sync'd successfully.
   <!-- COS sources -->
   <project path="src/overlays"
            name="cos/overlays/board-overlays" />
+  <project path="src/third_party/portage-stable"
+           name="third_party/overlays/portage-stable" />
   <project path="manifest" name="cos/manifest" >
       <copyfile src="LICENSE" dest="LICENSE" />
   </project>
