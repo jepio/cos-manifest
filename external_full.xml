@@ -76,15 +76,14 @@ Your sources have been sync'd successfully.
   <project path="src/platform2"
            name="mirrors/cros/chromiumos/platform2"
            revision="24b587ef5ef0ede247dd005819ac22c6d889b0e4" />
-  <project path="src/repohooks"
-           name="mirrors/cros/chromiumos/repohooks"
-           revision="4cee050efc3512485b3f5ac6460388052fc266b6" />
 
   <!-- COS sources -->
   <project path="src/overlays"
            name="cos/overlays/board-overlays" />
   <project path="src/third_party/portage-stable"
            name="third_party/overlays/portage-stable" />
+  <project path="src/repohooks"
+           name="cos/repohooks" />
   <project path="manifest" name="cos/manifest" >
       <copyfile src="LICENSE" dest="LICENSE" />
   </project>
@@ -93,6 +92,6 @@ Your sources have been sync'd successfully.
            revision="refs/heads/release-R85-13310.B-cos-5.4" />
 
   <repo-hooks enabled-list="pre-upload"
-           in-project="mirrors/cros/chromiumos/repohooks" />
+           in-project="cos/repohooks" />
 
 </manifest>
