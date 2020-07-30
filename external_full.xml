@@ -90,6 +90,9 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/kernel/v5.4"
            name="third_party/kernel"
            revision="refs/heads/release-R85-13310.B-cos-5.4" />
+  <project path="src/third_party/kernel/v4.19"
+           name="third_party/kernel"
+           revision="refs/heads/cos-4.19" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
