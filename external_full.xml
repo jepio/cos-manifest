@@ -84,6 +84,8 @@ Your sources have been sync'd successfully.
            name="third_party/overlays/portage-stable" />
   <project path="src/repohooks"
            name="cos/repohooks" />
+  <project path="src/platform/cobble"
+           name="cos/cobble" />
   <project path="manifest" name="cos/manifest" >
       <copyfile src="LICENSE" dest="LICENSE" />
   </project>
