@@ -45,13 +45,6 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/autotest/files"
            name="mirrors/cros/chromiumos/third_party/autotest"
            revision="413cd25b3cef93d30e6bc889b7bb461101b15858" />
-  <project path="src/third_party/chromiumos-overlay"
-           sync-c="true"
-           name="mirrors/cros/chromiumos/overlays/chromiumos-overlay"
-           revision="97808285192b03a73269f8cc63d33d693e834efa" />
-  <project path="src/third_party/eclass-overlay"
-           name="mirrors/cros/chromiumos/overlays/eclass-overlay"
-           revision="e8e6ae6cb392893a377f92024efbcbc94a0a7985" />
   <project path="src/platform/dev"
            name="mirrors/cros/chromiumos/platform/dev-util"
            revision="b898c1bfbc3f0a0fa38dd5911b283c408657dd36" />
@@ -82,6 +75,11 @@ Your sources have been sync'd successfully.
            name="cos/overlays/board-overlays" />
   <project path="src/third_party/portage-stable"
            name="third_party/overlays/portage-stable" />
+  <project path="src/third_party/eclass-overlay"
+           name="third_party/overlays/eclass-overlay" />
+  <project path="src/third_party/chromiumos-overlay"
+           sync-c="true"
+           name="third_party/overlays/chromiumos-overlay" />
   <project path="src/repohooks"
            name="cos/repohooks" />
   <project path="src/platform/cobble"
