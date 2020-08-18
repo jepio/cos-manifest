@@ -85,7 +85,8 @@ Your sources have been sync'd successfully.
            sync-c="true"
            name="third_party/overlays/chromiumos-overlay" />
   <project path="src/repohooks"
-           name="cos/repohooks" />
+           name="cos/repohooks"
+           revision="refs/heads/master" />
   <project path="src/platform/cobble"
            name="cos/cobble" />
   <project path="manifest" name="cos/manifest" >
