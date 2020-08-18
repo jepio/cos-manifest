@@ -80,7 +80,8 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/portage-stable"
            name="third_party/overlays/portage-stable" />
   <project path="src/repohooks"
-           name="cos/repohooks" />
+           name="cos/repohooks"
+           revision="refs/heads/master" />
   <project path="src/platform/cobble"
            name="cos/cobble" />
   <project path="manifest" name="cos/manifest" >
