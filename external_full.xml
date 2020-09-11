@@ -79,6 +79,9 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/rootdev"
            name="mirrors/cros/chromiumos/third_party/rootdev"
            revision="9b7d26a6a54f5f9e02b93a5d5ebf266fd748e06c" />
+  <project path="src/platform2"
+           name="mirrors/cros/chromiumos/platform2"
+           revision="0ee68c125c7bac78938bdbc7ba11cb3025e99b72" />
 
   <!-- COS sources -->
   <project path="src/overlays"
