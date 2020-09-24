@@ -29,7 +29,10 @@
            name="chromiumos/platform/fw-testing-configs"
            revision="7ed9632bfe31c5ab7f403f95194c1d8047999374"
            remote="chromium" />
-
+  <project path="src/third_party/breakpad"
+           name="chromiumos/platform/google-breakpad"
+           revision="2757a2c9c819fcae3784576aef0c8400c7ad06d7"
+           remote="chromium" />
   <project path="src/third_party/breakpad/src/third_party/lss"
            name="linux-syscall-support.git"
            revision="8048ece6c16c91acfe0d36d1d3cc0890ab6e945c"
