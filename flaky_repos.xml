@@ -25,33 +25,39 @@
            fetch="https://chromium.googlesource.com"
            review="https://chromium-review.googlesource.com" />
 
+  <!--
+   These repositories do not need to be pinned to a specific commit SHA
+   because their ebuilds already pin to a specific commit SHA. We just need
+   to make sure that the commit SHA needed by the ebuild is reachable by the
+   revision written here (typically the default revision is good enough).
+  -->
   <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="7ed9632bfe31c5ab7f403f95194c1d8047999374"
-           remote="chromium" />
-  <project path="src/third_party/breakpad"
-           name="chromiumos/platform/google-breakpad"
-           revision="2757a2c9c819fcae3784576aef0c8400c7ad06d7"
-           remote="chromium" />
-  <project path="src/third_party/breakpad/src/third_party/lss"
-           name="linux-syscall-support.git"
-           revision="8048ece6c16c91acfe0d36d1d3cc0890ab6e945c"
            remote="chromium" />
   <project path="src/platform/tast"
            name="chromiumos/platform/tast"
-           revision="2ad1b5ed63ac152ca9c5f907c9e093e16b14725a"
            remote="chromium" />
   <project path="src/platform/tast-tests"
            name="chromiumos/platform/tast-tests"
-           revision="0a0dbcc3a116a19d871ae75bed8d1a727f5b9341"
            remote="chromium" />
   <project path="src/platform/tast-tests/src/chromiumos/tast/remote/firmware/data/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="7ed9632bfe31c5ab7f403f95194c1d8047999374"
            remote="chromium" />
   <project path="src/platform/microbenchmarks"
            name="chromiumos/platform/microbenchmarks"
-           revision="refs/heads/master"
+           remote="chromium" />
+
+  <!--
+   breakpad and lss are special; they need to be pinned to specific commit
+   SHAs, similar to our mirrored repositories.
+  -->
+  <project path="src/third_party/breakpad"
+           name="chromiumos/platform/google-breakpad"
+           revision="3d8daa2c7458c8e411e691ac6f0d503418ef6231"
+           remote="chromium" />
+  <project path="src/third_party/breakpad/src/third_party/lss"
+           name="linux-syscall-support.git"
+           revision="fd00dbbd0c06a309c657d89e9430143b179ff6db"
            remote="chromium" />
 
 </manifest>
