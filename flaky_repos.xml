@@ -49,5 +49,9 @@
            name="chromiumos/platform/fw-testing-configs"
            revision="7ed9632bfe31c5ab7f403f95194c1d8047999374"
            remote="chromium" />
+  <project path="src/platform/microbenchmarks"
+           name="chromiumos/platform/microbenchmarks"
+           revision="refs/heads/master"
+           remote="chromium" />
 
 </manifest>
