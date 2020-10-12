@@ -80,6 +80,8 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/chromiumos-overlay"
            sync-c="true"
            name="third_party/overlays/chromiumos-overlay" />
+  <!-- Keep revision for cos/repohooks pinned to refs/heads/master
+       when creating a new release branch -->
   <project path="src/repohooks"
            name="cos/repohooks" />
   <project path="src/platform/cobble"
