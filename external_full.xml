@@ -47,7 +47,7 @@ Your sources have been sync'd successfully.
            revision="67862b2d1c5ec9ad8a5b0a5471166ae80e342fd8" />
   <project path="src/third_party/chromiumos-overlay"
            sync-c="true"
-           name="mirrors/cros/chromiumos/overlays/chromiumos-overlay"
+           name="third_party/overlays/chromiumos-overlay"
            revision="50547eafb48c5f520e598dbdf93c8f01ac4a49a2" />
   <project path="src/third_party/eclass-overlay"
            name="mirrors/cros/chromiumos/overlays/eclass-overlay"
