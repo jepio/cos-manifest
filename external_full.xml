@@ -15,6 +15,9 @@
 -->
 
 <manifest>
+
+  <include name="flaky_repos.xml" />
+
   <remote  name="cos"
            fetch="https://cos.googlesource.com"
            review="https://cos-review.googlesource.com"  />
@@ -83,7 +86,7 @@ Your sources have been sync'd successfully.
            name="third_party/overlays/chromiumos-overlay" />
   <project path="src/repohooks"
            name="cos/repohooks"
-           revision="refs/heads/release-R85-13310.B" />
+           revision="refs/heads/master" />
   <project path="src/platform/cobble"
            name="cos/cobble"
            revision="refs/heads/release-R85-13310.B" />
