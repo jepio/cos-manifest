@@ -27,6 +27,7 @@
 
   <project path="src/platform/microbenchmarks"
            name="chromiumos/platform/microbenchmarks"
-           remote="chromium" />
+           remote="chromium"
+           revision="refs/heads/release-R85-13310.B" />
 
 </manifest>
