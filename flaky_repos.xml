@@ -29,4 +29,14 @@
            name="chromiumos/platform/microbenchmarks"
            remote="chromium" />
 
+  <project path="src/platform/ec"
+           name="chromiumos/platform/ec"
+           remote="chromium"
+           revision="refs/heads/master" />
+
+  <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
+           name="chromiumos/platform/fw-testing-configs"
+           remote="chromium"
+           revision="refs/heads/master" />
+
 </manifest>
