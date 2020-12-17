@@ -18,7 +18,7 @@
   <remote  name="cos"
            fetch="https://cos.googlesource.com"
            review="https://cos-review.googlesource.com"  />
-  <default remote="cos" revision="refs/heads/release-R81-12871.B" sync-j="8" />
+  <default remote="cos" revision="refs/heads/main-R81-12871.B" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
@@ -42,10 +42,6 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/autotest/files"
            name="mirrors/cros/chromiumos/third_party/autotest"
            revision="4b5b686c5d1892910d6826bd11338837fd9c39cf" />
-  <project path="src/third_party/chromiumos-overlay"
-           sync-c="true"
-           name="third_party/overlays/chromiumos-overlay"
-           revision="bc0b61b2dcced141dfcd6d750bfcce2866618003" />
   <project path="src/third_party/eclass-overlay"
            name="mirrors/cros/chromiumos/overlays/eclass-overlay"
            revision="34e58410cb7f654dc14ef327e2f776da86037da1" />
@@ -79,17 +75,21 @@ Your sources have been sync'd successfully.
            name="cos/overlays/board-overlays" />
   <project path="src/third_party/portage-stable"
            name="third_party/overlays/portage-stable" />
+  <project path="src/third_party/chromiumos-overlay"
+           sync-c="true"
+           name="third_party/overlays/chromiumos-overlay" />
   <project path="src/repohooks"
            name="cos/repohooks"
            revision="refs/heads/master" />
   <project path="src/platform/cobble"
-           name="cos/cobble" />
+           name="cos/cobble"
+           revision="refs/heads/release-R81-12871.B" />
   <project path="manifest" name="cos/manifest" >
       <copyfile src="LICENSE" dest="LICENSE" />
   </project>
   <project path="src/third_party/kernel/v4.19"
            name="third_party/kernel"
-           revision="refs/heads/release-R81-12871.B-cos-4.19" />
+           revision="refs/heads/main-R81-12871.B-cos-4.19" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
