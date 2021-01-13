@@ -39,9 +39,6 @@ Your sources have been sync'd successfully.
   <project path="src/platform/crostestutils"
            name="mirrors/cros/chromiumos/platform/crostestutils"
            revision="110e8dfe269f7adef222713eba02dac64ecac7d8" />
-  <project path="src/scripts"
-           name="mirrors/cros/chromiumos/platform/crosutils"
-           revision="3c9dcdac9f7cd873643c1d4e6dd064cd6a3c4ef5" />
   <project path="src/platform/vboot_reference"
            name="mirrors/cros/chromiumos/platform/vboot_reference"
            revision="524012c64c07f8673998428cca7f80e01a387f48" />
@@ -80,8 +77,9 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/chromiumos-overlay"
            sync-c="true"
            name="third_party/overlays/chromiumos-overlay" />
-  <!-- Keep revision for cos/repohooks pinned to refs/heads/master
-       when creating a new release branch -->
+  <project path="src/scripts"
+           name="third_party/platform/crosutils"
+           revision="refs/heads/main" />
   <project path="src/repohooks"
            name="cos/repohooks" />
   <project path="src/platform/cobble"
