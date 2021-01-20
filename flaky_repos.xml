@@ -53,7 +53,7 @@
   -->
   <project path="src/third_party/breakpad"
            name="chromiumos/platform/google-breakpad"
-           revision="3d8daa2c7458c8e411e691ac6f0d503418ef6231"
+           revision="f469cab97b56b79107ce943e13b375add2676d17"
            remote="chromium" />
   <project path="src/third_party/breakpad/src/third_party/lss"
            name="linux-syscall-support.git"
