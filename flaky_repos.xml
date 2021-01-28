@@ -50,6 +50,10 @@
            name="chromiumos/third_party/hdctools"
            revision="refs/heads/main"
            remote="chromium" />
+  <project path="src/third_party/rootdev"
+           name="chromiumos/third_party/rootdev"
+           revision="refs/heads/main"
+           remote="chromium" />
 
   <!--
    breakpad and lss are special; they need to be pinned to specific commit
