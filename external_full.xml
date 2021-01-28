@@ -15,6 +15,9 @@
 -->
 
 <manifest>
+
+  <include name="flaky_repos.xml" />
+
   <remote  name="cos"
            fetch="https://cos.googlesource.com"
            review="https://cos-review.googlesource.com"  />
