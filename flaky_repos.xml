@@ -29,6 +29,11 @@
            name="chromiumos/platform/microbenchmarks"
            remote="chromium" />
 
+  <project path="src/third_party/rootdev"
+           name="chromiumos/third_party/rootdev"
+           revision="refs/heads/release-R85-13310.B"
+           remote="chromium" />
+
   <project path="src/platform/ec"
            name="chromiumos/platform/ec"
            remote="chromium"
