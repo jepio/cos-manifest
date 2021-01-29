@@ -45,10 +45,6 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/autotest/files"
            name="mirrors/cros/chromiumos/third_party/autotest"
            revision="67862b2d1c5ec9ad8a5b0a5471166ae80e342fd8" />
-  <project path="src/third_party/chromiumos-overlay"
-           sync-c="true"
-           name="third_party/overlays/chromiumos-overlay"
-           revision="50547eafb48c5f520e598dbdf93c8f01ac4a49a2" />
   <project path="src/third_party/eclass-overlay"
            name="mirrors/cros/chromiumos/overlays/eclass-overlay"
            revision="64832056e5a2eeeed0ae3c9da8ac515cff2ce177" />
@@ -99,6 +95,8 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/kernel/v4.19"
            name="third_party/kernel"
            revision="refs/heads/release-R77-12371.B-cos-4.19" />
+  <project path="src/third_party/chromiumos-overlay"
+           name="third_party/overlays/chromiumos-overlay" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
