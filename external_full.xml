@@ -21,7 +21,7 @@
   <remote  name="cos"
            fetch="https://cos.googlesource.com"
            review="https://cos-review.googlesource.com"  />
-  <default remote="cos" revision="refs/heads/master" sync-j="8" />
+  <default remote="cos" revision="refs/heads/release-R89" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
@@ -79,12 +79,13 @@ Your sources have been sync'd successfully.
            name="third_party/overlays/chromiumos-overlay" />
   <project path="src/scripts"
            name="third_party/platform/crosutils"
-           revision="refs/heads/main" />
+           revision="refs/heads/release-R89" />
   <project path="chromite"
            name="third_party/chromite"
-           revision="refs/heads/main" />
+           revision="refs/heads/release-R89" />
   <project path="src/repohooks"
-           name="cos/repohooks" />
+           name="cos/repohooks"
+           revision="refs/heads/master" />
   <project path="src/platform/cobble"
            name="cos/cobble" />
   <project path="manifest" name="cos/manifest" >
@@ -92,10 +93,10 @@ Your sources have been sync'd successfully.
   </project>
   <project path="src/third_party/kernel/v4.19"
            name="third_party/kernel"
-           revision="refs/heads/cos-4.19" />
+           revision="refs/heads/release-R89-cos-4.19" />
   <project path="src/third_party/kernel/v5.4"
            name="third_party/kernel"
-           revision="refs/heads/cos-5.4" />
+           revision="refs/heads/release-R89-cos-5.4" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
