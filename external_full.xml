@@ -24,9 +24,6 @@ Your sources have been sync'd successfully.
   </notice>
 
   <!-- mirrored cros_sdk dependencies -->
-  <project path="chromite"
-           name="mirrors/cros/chromiumos/chromite"
-           revision="acf477687f5d03eeaac0f01f0486fe5e83640a06" />
   <project path="chromite/infra/proto"
            name="mirrors/cros/chromiumos/infra/proto"
            revision="4bcb4b7260bf9b98f93f5c3be79564c9ab206ce9" />
@@ -97,6 +94,10 @@ Your sources have been sync'd successfully.
            revision="refs/heads/release-R77-12371.B-cos-4.19" />
   <project path="src/third_party/chromiumos-overlay"
            name="third_party/overlays/chromiumos-overlay" />
+
+  <!-- forked cros_sdk dependencies -->
+  <project path="chromite"
+           name="third_party/chromite" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
