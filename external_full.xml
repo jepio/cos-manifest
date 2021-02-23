@@ -27,9 +27,6 @@ Your sources have been sync'd successfully.
   </notice>
 
   <!-- mirrored cros_sdk dependencies -->
-  <project path="chromite"
-           name="mirrors/cros/chromiumos/chromite"
-           revision="f5c562d16477ffcd937496656e1c5733b7c7951b" />
   <project path="chromite/infra/proto"
            name="mirrors/cros/chromiumos/infra/proto"
            revision="318376056bca545db5d536c734424b7c0457688e" />
@@ -98,6 +95,10 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/kernel/v4.19"
            name="third_party/kernel"
            revision="refs/heads/cos-4.19" />
+
+  <!-- forked cros_sdk dependencies -->
+  <project path="chromite"
+           name="third_party/chromite" />
 
   <repo-hooks enabled-list="pre-upload"
            in-project="cos/repohooks" />
