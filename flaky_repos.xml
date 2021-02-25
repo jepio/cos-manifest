@@ -24,6 +24,9 @@
   <remote  name="chromium"
            fetch="https://chromium.googlesource.com"
            review="https://chromium-review.googlesource.com" />
+  <remote  name="android"
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com" />
 
   <!--
    These repositories do not need to be pinned to a specific commit SHA
@@ -59,6 +62,11 @@
            name="chromiumos/third_party/rootdev"
            revision="refs/heads/main"
            remote="chromium" />
+
+  <project path="src/aosp/toolchain/gcc"
+           name="toolchain/gcc"
+           revision="refs/heads/master"
+           remote="android" />
 
   <!--
    breakpad and lss are special; they need to be pinned to specific commit
