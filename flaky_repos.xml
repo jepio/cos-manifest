@@ -32,40 +32,42 @@
    These repositories do not need to be pinned to a specific commit SHA
    because their ebuilds already pin to a specific commit SHA. We just need
    to make sure that the commit SHA needed by the ebuild is reachable by the
-   revision written here (typically the default revision is good enough).
+   revision written here.
+
+   However, we still pin to a commit SHA to avoid generating a ton of erroneous
+   build numbers.
   -->
   <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="refs/heads/main"
+           revision="b42990c00a476a1ae48e6364bded4dca3f30e1bf"
            remote="chromium" />
   <project path="src/platform/tast"
            name="chromiumos/platform/tast"
-           revision="refs/heads/main"
+           revision="d046166708dcfe66d512919eb37e909b9dcc41ab"
            remote="chromium" />
   <project path="src/platform/tast-tests"
            name="chromiumos/platform/tast-tests"
-           revision="refs/heads/main"
+           revision="0a0f2956f90334d2ce9653b9668b4df829ebd5c9"
            remote="chromium" />
   <project path="src/platform/tast-tests/src/chromiumos/tast/remote/firmware/data/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="refs/heads/main"
+           revision="b42990c00a476a1ae48e6364bded4dca3f30e1bf"
            remote="chromium" />
   <project path="src/platform/microbenchmarks"
            name="chromiumos/platform/microbenchmarks"
-           revision="refs/heads/main"
+           revision="a3c495a9f5657c3778e5179d1c1ba073ad26020b"
            remote="chromium" />
   <project path="src/third_party/hdctools"
            name="chromiumos/third_party/hdctools"
-           revision="refs/heads/main"
+           revision="7b054ecd7082a65582019df4ff29acb48f3b3c89"
            remote="chromium" />
   <project path="src/third_party/rootdev"
            name="chromiumos/third_party/rootdev"
-           revision="refs/heads/main"
+           revision="b2f37be7c25bc83b76f1b7063a4ef38b824dc4ef"
            remote="chromium" />
-
   <project path="src/aosp/toolchain/gcc"
            name="toolchain/gcc"
-           revision="refs/heads/master"
+           revision="a9d5e6fb22fe3283eeecfb97211a12c072a7b469"
            remote="android" />
 
   <!--
