@@ -39,9 +39,6 @@ Your sources have been sync'd successfully.
   <project path="src/scripts"
            name="mirrors/cros/chromiumos/platform/crosutils"
            revision="431cf23a01176ff966364f80c6b9ed6e046dfd8b" />
-  <project path="src/platform/vboot_reference"
-           name="mirrors/cros/chromiumos/platform/vboot_reference"
-           revision="0776fb3aab035d32fd1148627953e2aedd08c987" />
   <project path="src/third_party/autotest/files"
            name="mirrors/cros/chromiumos/third_party/autotest"
            revision="b9a7131be637ee4dbe5dac716ccda145594c73aa" />
@@ -81,6 +78,9 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/chromiumos-overlay"
            sync-c="true"
            name="third_party/overlays/chromiumos-overlay" />
+  <project path="src/platform/vboot_reference"
+           name="third_party/platform/vboot_reference"
+           revision="refs/heads/release-R85-13310.B" />
   <project path="src/repohooks"
            name="cos/repohooks"
            revision="refs/heads/master" />
