@@ -36,9 +36,6 @@ Your sources have been sync'd successfully.
   <project path="src/platform/crostestutils"
            name="mirrors/cros/chromiumos/platform/crostestutils"
            revision="7666ad6d68f381a9de17d682c01803ca2f1c985d" />
-  <project path="src/platform/vboot_reference"
-           name="mirrors/cros/chromiumos/platform/vboot_reference"
-           revision="6f6efdc6fa38ed3bcacfa9e152f415d50ee8bad0" />
   <project path="src/third_party/autotest/files"
            name="mirrors/cros/chromiumos/third_party/autotest"
            revision="db48601acf9d646e8f4b4c223e67da2d40cf02e6" />
@@ -82,6 +79,9 @@ Your sources have been sync'd successfully.
            revision="refs/heads/release-R89" />
   <project path="chromite"
            name="third_party/chromite"
+           revision="refs/heads/release-R89" />
+  <project path="src/platform/vboot_reference"
+           name="third_party/platform/vboot_reference"
            revision="refs/heads/release-R89" />
   <project path="src/repohooks"
            name="cos/repohooks"
