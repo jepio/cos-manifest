@@ -90,9 +90,6 @@ Your sources have been sync'd successfully.
   <project path="manifest" name="cos/manifest" >
       <copyfile src="LICENSE" dest="LICENSE" />
   </project>
-  <project path="src/third_party/kernel/v4.19"
-           name="third_party/kernel"
-           revision="refs/heads/cos-4.19" />
   <project path="src/third_party/kernel/v5.4"
            name="third_party/kernel"
            revision="refs/heads/cos-5.4" />
