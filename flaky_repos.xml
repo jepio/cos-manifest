@@ -36,19 +36,19 @@
   -->
   <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="b42990c00a476a1ae48e6364bded4dca3f30e1bf"
+           revision="22c5b21a61f6477ec943cde45a66526c0f2c11ad"
            remote="chromium" />
   <project path="src/platform/tast"
            name="chromiumos/platform/tast"
-           revision="d046166708dcfe66d512919eb37e909b9dcc41ab"
+           revision="e4d08848f7ee842b8cc7eef4b5ac40371eab0c5a"
            remote="chromium" />
   <project path="src/platform/tast-tests"
            name="chromiumos/platform/tast-tests"
-           revision="0a0f2956f90334d2ce9653b9668b4df829ebd5c9"
+           revision="c21df20297534ad71c6cea3ac0b364abfcfecfbc"
            remote="chromium" />
   <project path="src/platform/tast-tests/src/chromiumos/tast/remote/firmware/data/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="b42990c00a476a1ae48e6364bded4dca3f30e1bf"
+           revision="22c5b21a61f6477ec943cde45a66526c0f2c11ad"
            remote="chromium" />
   <project path="src/platform/microbenchmarks"
            name="chromiumos/platform/microbenchmarks"
@@ -56,7 +56,7 @@
            remote="chromium" />
   <project path="src/third_party/hdctools"
            name="chromiumos/third_party/hdctools"
-           revision="7b054ecd7082a65582019df4ff29acb48f3b3c89"
+           revision="e521fed7a332b7c82232171a18361da239e9be62"
            remote="chromium" />
   <project path="src/third_party/rootdev"
            name="chromiumos/third_party/rootdev"
@@ -68,12 +68,13 @@
    SHAs, similar to our mirrored repositories.
   -->
   <project path="src/third_party/breakpad"
-           name="chromiumos/platform/google-breakpad"
-           revision="f469cab97b56b79107ce943e13b375add2676d17"
+           name="breakpad/breakpad"
+           revision="a524a1e24b19dcb3605190e5e9bb1b0f10ca8be8"
            remote="chromium" />
   <project path="src/third_party/breakpad/src/third_party/lss"
            name="linux-syscall-support.git"
-           revision="fd00dbbd0c06a309c657d89e9430143b179ff6db"
+           revision="e1e7b0ad8ee99a875b272c8e33e308472e897660"
            remote="chromium" />
 
 </manifest>
+
