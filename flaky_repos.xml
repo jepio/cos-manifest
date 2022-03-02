@@ -36,19 +36,19 @@
   -->
   <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="72df0f2b89ecca6d2f823038c6422fe5b898a0fb"
+           revision="7a01213d5fdc415d99fe5060a0f06fccdcee018a"
            remote="chromium" />
   <project path="src/platform/tast"
            name="chromiumos/platform/tast"
-           revision="b1fb85673bd75c54dae214fc3d7764672916819d"
+           revision="9e62f787bdb066d6f6d187ba4c5614e81a2289c7"
            remote="chromium" />
   <project path="src/platform/tast-tests"
            name="chromiumos/platform/tast-tests"
-           revision="fd2ca8e5fb9fdb7f8b4d473974386a822428dc21"
+           revision="45e1d1e1d8426d5a23926257afd9c869029cdbd0"
            remote="chromium" />
   <project path="src/platform/tast-tests/src/chromiumos/tast/remote/firmware/data/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
-           revision="72df0f2b89ecca6d2f823038c6422fe5b898a0fb"
+           revision="7a01213d5fdc415d99fe5060a0f06fccdcee018a"
            remote="chromium" />
   <project path="src/platform/microbenchmarks"
            name="chromiumos/platform/microbenchmarks"
@@ -56,7 +56,7 @@
            remote="chromium" />
   <project path="src/third_party/hdctools"
            name="chromiumos/third_party/hdctools"
-           revision="cc32f0209b995c1334b3e5f310cccc47905680af"
+           revision="eac1edcc3c370f34bacf94403be80dbda6c7077a"
            remote="chromium" />
   <project path="src/third_party/rootdev"
            name="chromiumos/third_party/rootdev"
@@ -77,5 +77,3 @@
            remote="chromium" />
 
 </manifest>
-
-
